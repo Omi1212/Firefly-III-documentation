@@ -1,18 +1,12 @@
 # Información del sitio
-site_name: AstroAPI | Documentación Oficial
+site_name: Firefly III - Documentación
 site_url: https://github.com/Omi1212/Taller4-ACA/
-site_description: >
-  Documentación oficial y guía de uso para AstroAPI, una API RESTful 
-  para obtener información sobre signos zodiacales, horóscopos y compatibilidad.
 
 # Tema
 theme:
   name: material
   language: es
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -22,10 +16,22 @@ theme:
 
 # Navegación
 nav:
-
-  - 'Inicio': 'index.md'
-  - 'Guía de Instalación': 'instalacion.md'
-  - 'Arquitectura del Sistema': 'arquitectura.md'
+  - "Inicio": "index.md"
+  - "Guía de Instalación": "instalacion.md"
+  - "Arquitectura del Sistema": "arquitectura.md"
+  - "Manual Técnico":
+      - "Introducción": "manual_tecnico/introduccion.md"
+      - "API REST": "manual_tecnico/api_rest.md"
+      - "Autenticación": "manual_tecnico/autenticacion.md"
+      - "Errores Comunes": "manual_tecnico/errores_comunes.md"
+  - "Manual de Usuario":
+      - "Introducción": "user_manual/Introducción.md"
+      - "Tipos de Reportes":
+          - "Default Financial Report": "user_manual/reports/default.md"
+          - "Transaction History Overview (audit)": "user_manual/reports/transaction_history.md"
+          - "Budget Report": "user_manual/reports/budget.md"
+          - "Category Report": "user_manual/reports/category.md"
+          - "Tag Report": "user_manual/reports/tag.md"
 
 # Extensiones de Markdown
 markdown_extensions:
@@ -43,3 +49,10 @@ markdown_extensions:
   - toc:
       permalink: true
       title: "En esta página"
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+# Plugins
+plugins:
+  - glightbox
