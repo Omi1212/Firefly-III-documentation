@@ -1,0 +1,45 @@
+# Información del sitio
+site_name: AstroAPI | Documentación Oficial
+site_url: https://github.com/Omi1212/Taller4-ACA/
+site_description: >
+  Documentación oficial y guía de uso para AstroAPI, una API RESTful 
+  para obtener información sobre signos zodiacales, horóscopos y compatibilidad.
+
+# Tema
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+# Navegación
+nav:
+
+  - 'Inicio': 'index.md'
+  - 'Guía de Instalación': 'instalacion.md'
+  - 'Arquitectura del Sistema': 'arquitectura.md'
+
+# Extensiones de Markdown
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      title: "En esta página"
