@@ -1,0 +1,876 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Omi1212/Taller4-ACA/user_manual/reports/budget/">
+      
+      
+        <link rel="prev" href="../transaction_history/">
+      
+      
+        <link rel="next" href="../category/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Budget Report - Firefly III - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#budget-report" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Firefly III - Documentación" class="md-header__button md-logo" aria-label="Firefly III - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Firefly III - Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Budget Report
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Firefly III - Documentación" class="md-nav__button md-logo" aria-label="Firefly III - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Firefly III - Documentación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../instalacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guía de Instalación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../arquitectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitectura del Sistema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual Técnico
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual Técnico
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_manual/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_manual/rest_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API REST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_manual/authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_manual/common_issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Errores Comunes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual de Usuario
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Manual de Usuario
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Introducci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tipos de Reportes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tipos de Reportes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Default Financial Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transaction_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transaction History Overview (audit)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Budget Report
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Budget Report
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="En esta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      En esta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-generar-el-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo generar el reporte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo generar el reporte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-antes-de-generar-el-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración antes de generar el reporte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-y-exportacion-del-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualización y exportación del reporte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Category Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tag Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="En esta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      En esta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-generar-el-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo generar el reporte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo generar el reporte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-antes-de-generar-el-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración antes de generar el reporte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-y-exportacion-del-reporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualización y exportación del reporte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="budget-report">Budget Report<a class="headerlink" href="#budget-report" title="Permanent link">&para;</a></h1>
+<p>Este informe muestra un resumen detallado de los presupuestos y la cuenta seleccionados, lo que le permite ver su rendimiento con cada presupuesto. Esto es especialmente útil para ver en qué gasta su dinero, cuál es la tendencia y si sus límites presupuestarios realmente están teniendo algún efecto.</p>
+<p>Parte de esta información también está disponible en las páginas de presupuesto predeterminadas y en su página principal. Puede hacer clic en la captura de pantalla a continuación para ver una versión ampliada.</p>
+<p><a class="glightbox" href="../../../img/budget_report.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/budget_report.png" /></a></p>
+<h2 id="como-generar-el-reporte">Cómo generar el reporte<a class="headerlink" href="#como-generar-el-reporte" title="Permanent link">&para;</a></h2>
+<p>Para generar un reporte, primero debes acceder acceder a la sección "Reports" en el menú lateral izquierdo de Firefly III. Una vez allí, sigue los siguientes pasos que se te mostran a continuación.</p>
+<p><a class="glightbox" href="../../../img/home.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe Financiero Predeterminado" src="../../../img/home.png" /></a></p>
+<h3 id="configuracion-antes-de-generar-el-reporte">Configuración antes de generar el reporte<a class="headerlink" href="#configuracion-antes-de-generar-el-reporte" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>En la sección "Reports", presiona el menú desplegable "Report Type" y elige "Budget Report".</p>
+<p><a class="glightbox" href="../../../img/budget_select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/budget_select.png" /></a></p>
+</li>
+<li>
+<p>Selecciona la cuenta que deseas analizar en el menú desplegable "Included accounts". Si no seleccionas una cuenta, se mostrarán todas las cuentas por defecto.</p>
+<p><a class="glightbox" href="../../../img/select_account.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/select_account.png" /></a></p>
+</li>
+<li>
+<p>Selecciona el período que deseas analizar en el menú desplegable "Date Range" o puedes escoger una de las opciones de "Preset-set ranges".</p>
+<p><a class="glightbox" href="../../../img/select_date.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/select_date.png" /></a></p>
+</li>
+<li>
+<p>Para este tipo de reporte, en la sub-sección "Extra Options", es necesario que especifiques un presupuesto.</p>
+<p><a class="glightbox" href="../../../img/select_budget.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/select_budget.png" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Para poder generar el reporte es necesario que especifiques un presupuesto que tengas creado. Si no lo haces, el reporte no se generará y se mostrará un mensaje de error.</p>
+</div>
+</li>
+<li>
+<p>Cuando hayas especificado todos los filtros para generar el reporte según tus necesidades, presiona el botón "Submit" en la sub-sección "View Report".</p>
+<p><a class="glightbox" href="../../../img/submit_default.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/submit_default.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">Información</p>
+<p>Esta imagen solo es con fines ilustrativos para mostrar la ubicación del botón Submit. El tipo de reporte que se está explicando para exportar podría no coincidir con el de la imagen.</p>
+</div>
+</li>
+</ol>
+<h3 id="visualizacion-y-exportacion-del-reporte">Visualización y exportación del reporte<a class="headerlink" href="#visualizacion-y-exportacion-del-reporte" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Una vez que hayas presionado el botón "Submit", se generará el reporte y podrás ver los resultados.</p>
+<p><a class="glightbox" href="../../../img/budget_generate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe de Presupuesto" src="../../../img/budget_generate.png" /></a></p>
+</li>
+<li>
+<p>Parea exportar el reporte, puedes hacer clic en el botón "Export" que se encuentra en la parte superior derecha de la página. Esto te permitirá descargar el reporte en formato PDF o XLS.</p>
+<p><a class="glightbox" href="../../../img/select_type_default.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Informe Financiero Predeterminado" src="../../../img/select_type_default.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">Información</p>
+<p>Esta imagen solo es con fines ilustrativos para mostrar la ubicación del botón de exportación. El tipo de reporte que se está explicando para exportar podría no coincidir con el de la imagen.</p>
+</div>
+</li>
+<li>
+<p>Una vez hayas seleccionado el tipo de archivo (PDF o XLS) que deseas para exportar el reporte, se descargará automáticamente en tu dispositivo.</p>
+</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">¡Listo!</p>
+<p>Ahora has generado y exportado con éxito el reporte <strong>Budget Report</strong>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

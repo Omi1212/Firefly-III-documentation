@@ -1,0 +1,971 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Omi1212/Taller4-ACA/technical_manual/common_issues/">
+      
+      
+        <link rel="prev" href="../authentication/">
+      
+      
+        <link rel="next" href="../../user_manual/Introducci%C3%B3n/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Errores Comunes - Firefly III - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#problemas-y-preguntas-comunes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Firefly III - Documentación" class="md-header__button md-logo" aria-label="Firefly III - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Firefly III - Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Errores Comunes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Firefly III - Documentación" class="md-nav__button md-logo" aria-label="Firefly III - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Firefly III - Documentación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instalacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guía de Instalación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitectura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitectura del Sistema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual Técnico
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual Técnico
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API REST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Errores Comunes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Errores Comunes
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="En esta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      En esta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#firefly-iii-muestra-una-pagina-que-dice-vacio-y-nada-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firefly III muestra una página que dice "Vacío" y nada más
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todas-las-transacciones-se-importan-con-la-fecha-de-hoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Todas las transacciones se importan con la fecha de hoy?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recibo-errores-504-gateway-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recibo errores "504 Gateway Timeout"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-mixto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenido mixto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filas-de-encabezado-adicionales-solo-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filas de encabezado adicionales (solo CSV)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-hay-suficiente-informacion-para-que-las-filas-sean-unicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      No hay suficiente información para que las filas sean únicas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faltan-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Faltan datos?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Faltan datos?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-crear-reglas-para-complementar-las-transacciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución: Crear reglas para complementar las transacciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-cuentas-de-destino-gastos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución: Cuentas de destino / gastos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual de Usuario
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Manual de Usuario
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/Introducci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tipos de Reportes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tipos de Reportes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/reports/default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Default Financial Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/reports/transaction_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transaction History Overview (audit)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/reports/budget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Budget Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/reports/category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Category Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/reports/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tag Report
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="En esta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      En esta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#firefly-iii-muestra-una-pagina-que-dice-vacio-y-nada-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firefly III muestra una página que dice "Vacío" y nada más
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todas-las-transacciones-se-importan-con-la-fecha-de-hoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Todas las transacciones se importan con la fecha de hoy?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recibo-errores-504-gateway-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recibo errores "504 Gateway Timeout"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-mixto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenido mixto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filas-de-encabezado-adicionales-solo-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filas de encabezado adicionales (solo CSV)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-hay-suficiente-informacion-para-que-las-filas-sean-unicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      No hay suficiente información para que las filas sean únicas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faltan-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Faltan datos?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Faltan datos?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-crear-reglas-para-complementar-las-transacciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución: Crear reglas para complementar las transacciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-cuentas-de-destino-gastos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución: Cuentas de destino / gastos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="problemas-y-preguntas-comunes">Problemas y Preguntas Comunes<a class="headerlink" href="#problemas-y-preguntas-comunes" title="Permanent link">&para;</a></h1>
+<p>Esta sección aborda algunos de los problemas más frecuentes que los usuarios encuentran al importar datos a Firefly III, junto con sus soluciones.</p>
+<hr />
+<h3 id="firefly-iii-muestra-una-pagina-que-dice-vacio-y-nada-mas">Firefly III muestra una página que dice "Vacío" y nada más<a class="headerlink" href="#firefly-iii-muestra-una-pagina-que-dice-vacio-y-nada-mas" title="Permanent link">&para;</a></h3>
+<p>Este es un problema común relacionado con la configuración de OAuth.</p>
+<ul>
+<li>Asegúrate de <strong>desmarcar</strong> la casilla <strong>"Confidencial"</strong> en la configuración de tu Cliente OAuth.</li>
+<li>Asegúrate de que el puerto también esté presente en la variable de entorno <code>VANITY_URL</code>, por ejemplo: <code>http://localhost:9001</code>.</li>
+</ul>
+<hr />
+<h3 id="todas-las-transacciones-se-importan-con-la-fecha-de-hoy">¿Todas las transacciones se importan con la fecha de hoy?<a class="headerlink" href="#todas-las-transacciones-se-importan-con-la-fecha-de-hoy" title="Permanent link">&para;</a></h3>
+<p>Esto suele ocurrir cuando el formato de fecha no se ha configurado correctamente.</p>
+<ul>
+<li>Asegúrate de que el campo de fecha en tu archivo CSV (ej. <code>2023-09-17</code>) esté marcado como la fecha de "Transacción".</li>
+<li>Verifica que el formato de fecha que seleccionas (ej. <code>Y-m-d</code>) coincida exactamente con el contenido del archivo. Sigue el formato indicado en <a href="https://www.php.net/manual/en/datetime.createfromformat.php">esta tabla</a>.</li>
+</ul>
+<hr />
+<h3 id="recibo-errores-504-gateway-timeout">Recibo errores "504 Gateway Timeout"<a class="headerlink" href="#recibo-errores-504-gateway-timeout" title="Permanent link">&para;</a></h3>
+<p>Cuando utilizas la interfaz web del importador de datos, la página puede expirar después de unos 600 segundos (10 minutos). Si utilizas un proxy inverso, este límite de tiempo podría ser aún más estricto.</p>
+<p>Aunque el proceso de importación continúa en segundo plano, la página se "pierde" y ya no recibirás actualizaciones de estado.</p>
+<p><strong>Solución</strong>: Importa tus datos en lotes más pequeños para que la página no expire.</p>
+<hr />
+<h3 id="contenido-mixto">Contenido mixto<a class="headerlink" href="#contenido-mixto" title="Permanent link">&para;</a></h3>
+<p>Algunos bancos reutilizan las columnas para diferente contenido. Por ejemplo, el banco "Sparkasse" (Alemania) utiliza la columna BIC para otros datos si no hay un BIC disponible.</p>
+<p>Si tu banco tiene problemas similares, la importación probablemente fallará. La mejor solución es ignorar esa columna por completo durante el mapeo.</p>
+<hr />
+<h3 id="filas-de-encabezado-adicionales-solo-csv">Filas de encabezado adicionales (solo CSV)<a class="headerlink" href="#filas-de-encabezado-adicionales-solo-csv" title="Permanent link">&para;</a></h3>
+<p>Algunos bancos insertan una fila de encabezado adicional (ej. <code>Fuente,Monto,Destino</code>) cada 100 filas, como si un ordenador olvidara los nombres de las columnas.</p>
+<p>Si tu banco hace esto, esas filas de encabezado adicionales causarán un error durante la importación. Deberás eliminarlas manualmente de tu archivo CSV antes de importarlo.</p>
+<hr />
+<h3 id="no-hay-suficiente-informacion-para-que-las-filas-sean-unicas">No hay suficiente información para que las filas sean únicas<a class="headerlink" href="#no-hay-suficiente-informacion-para-que-las-filas-sean-unicas" title="Permanent link">&para;</a></h3>
+<p>Por defecto, el importador de datos omite las transacciones duplicadas. Si no configuras específicamente el importador para que acepte filas no únicas, puedes encontrarte con este problema.</p>
+<p><strong>Solución</strong>: Abre el archivo en Excel o Numbers y añade una nueva columna con una secuencia numérica básica: 1, 2, 3, 4, etc. Esto debería ser suficiente para que cada fila sea única.</p>
+<hr />
+<h3 id="faltan-datos">¿Faltan datos?<a class="headerlink" href="#faltan-datos" title="Permanent link">&para;</a></h3>
+<p>Algunos bancos no proporcionan suficientes datos para realizar importaciones de calidad. Puedes notar esto cuando ocurren las siguientes cosas:</p>
+<ul>
+<li>Muchas transacciones donde la cuenta de contrapartida se llama <code>(sin nombre)</code>.</li>
+<li>Muchas transacciones con la descripción <code>(sin descripción)</code>.</li>
+</ul>
+<p>Lamentablemente, no hay mucho que se pueda hacer al respecto desde el importador. Sin embargo, aquí tienes algunos consejos que pueden facilitarte la vida.</p>
+<h4 id="solucion-crear-reglas-para-complementar-las-transacciones">Solución: Crear reglas para complementar las transacciones<a class="headerlink" href="#solucion-crear-reglas-para-complementar-las-transacciones" title="Permanent link">&para;</a></h4>
+<p>Incluso si hay la más mínima información en tus transacciones, puedes usar el motor de reglas de Firefly III para complementar y completar los datos. Por ejemplo:</p>
+<ul>
+<li>Si la descripción contiene <code>SPRMKT</code>, establece la descripción como <code>Compras</code> y la cuenta de destino como <code>Supermercado</code>.</li>
+<li>Toda transacción de exactamente <code>6.00</code> es probablemente de <code>Starbucks</code>.</li>
+</ul>
+<h4 id="solucion-cuentas-de-destino-gastos">Solución: Cuentas de destino / gastos<a class="headerlink" href="#solucion-cuentas-de-destino-gastos" title="Permanent link">&para;</a></h4>
+<p>Algunos usuarios crean cuentas de gastos para cada tienda. Una alternativa más sencilla es agrupar las transacciones en categorías más amplias como "Compras" y "Restaurante" y darlo por terminado.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
