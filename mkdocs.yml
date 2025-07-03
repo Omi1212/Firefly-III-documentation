@@ -20,10 +20,10 @@ nav:
   - "Guía de Instalación": "instalacion.md"
   - "Arquitectura del Sistema": "arquitectura.md"
   - "Manual Técnico":
-      - "Introducción": "manual_tecnico/introduccion.md"
-      - "API REST": "manual_tecnico/api_rest.md"
-      - "Autenticación": "manual_tecnico/autenticacion.md"
-      - "Errores Comunes": "manual_tecnico/errores_comunes.md"
+      - "Introducción": "technical_manual/introduction.md"
+      - "API REST": "technical_manual/rest_api.md"
+      - "Autenticación": "technical_manual/authentication.md"
+      - "Errores Comunes": "technical_manual/common_issues.md"
   - "Manual de Usuario":
       - "Introducción": "user_manual/Introducción.md"
       - "Tipos de Reportes":
